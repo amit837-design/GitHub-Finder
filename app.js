@@ -71,7 +71,7 @@ function getUserData(username) {
     const remaining = response.headers.get("X-RateLimit-Remaining");
     document.querySelector(
       ".noticeShow"
-    ).innerHTML = `<div class="text-blue-700 w-fit mx-auto">GitHub allows 60 requests per hour. You have ${remaining} request(s) remaining in this hour.</div>`;
+    ).innerHTML = `<div class="text-white-500 w-fit mx-auto">GitHub allows 60 requests per hour. You have ${remaining} request(s) remaining in this hour.</div>`;
     if (!response.ok) {
       dataBox.innerHTML = `<div class="mx-auto text-red-700 w-fit">Please enter a valid username.</div>`;
     } else {
